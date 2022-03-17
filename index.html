@@ -6,16 +6,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A0ne Social Media | Facebook</title>
+    <!-- externel css file here  -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <!-- --------------------Navigation bar ---------------------- -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">A0ne<span>Media</span></h2>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Search for creators,inspraitions,and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="#create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./assets/img/avatar/1.jpg" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- --------------------Main---------------------- -->
+    <main>
+        <div class="container">
+            <!-- =======================Left======================= -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./assets/img/avatar/1.jpg" class="profile-photo">
+                    </div>
+                    <div class="handle">
+                        <h4>Jolie</h4>
+                        <p class="text-muted">@jolie</p>
+                    </div>
+                </a>
+                <!-- --------------------Sidebar Menu---------------------- -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fas fa-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fas fa-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications"> <span><i class="fas fa-bell">
+                                <small class="notification-count">9+</small>
+                            </i></span>
+                        <h3>Notifications</h3>
+                        <!-- ------------------Notification popup--------------------- -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/2.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Scarlett Johnson</b>accepted your friend request
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/3.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Jack Sully</b>accepted your friend request
+                                    <small class="text-muted">1 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/4.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Evana Angel</b>accepted your friend request
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/5.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Helena</b>accepted your friend request
+                                    <small class="text-muted">4 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/6.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Mark Cuben</b>accepted your friend request
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./assets/img/avatar/1.jpg" class="profile-photo">
+                                </div>
+                                <div class="notifications-body">
+                                    <b>Angelina Jolie</b>accepted your friend request
+                                    <small class="text-muted">6 days ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------Notification popup End--------------------- -->
+                    </a>
+                    <a class="menu-item" id="messages-notifications"><span><i class="fas fa-envelope"><small
+                                    class="notification-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item"><span><i class="fas fa-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item"><span><i class="fas fa-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item"><span><i class="fas fa-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item"> <span><i class="fas fa-cog"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- ----------------------End Sidebar--------------------- -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-- ----------------------End of Left--------------------- -->
 
+            <!-- =======================Middle====================== -->
+            <div class="middle">
+                <!-- ----------------------Stories--------------------- -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/1.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/2.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Scarlett Johnson</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/3.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Jack Sully</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/4.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Evana Angel</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/5.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Helena</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./assets/img/avatar/6.jpg" class="profile-photo">
+                        </div>
+                        <p class="name">Mark Cuben</p>
+                    </div>
+                </div>
+                <!-- ----------------------End of Stories--------------------- -->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./assets/img/avatar/1.jpg" class="profile-photo">
+                    </div>
+                    <input type="text" placeholder="Whats on your mind,Jolie?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+            </div>
+            <!-- =======================Right======================= -->
+            <div class="right">
 
-
-
-    
+            </div>
+        </div>
+    </main>
+    <!-- font awosome js link -->
+    <script src="https://kit.fontawesome.com/3fd530ab9b.js" crossorigin="anonymous"></script>
     <!-- externel js file link here -->
     <script src="./js/main.js"></script>
 </body>
