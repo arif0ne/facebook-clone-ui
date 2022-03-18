@@ -97,7 +97,7 @@ nav .container {
   align-items: center;
   justify-content: space-between;
 }
-nav .search-bar {
+.search-bar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +105,7 @@ nav .search-bar {
   border-radius: var(--border-radius);
   padding: var(--search-padding);
 }
-nav .search-bar input[type="search"] {
+.search-bar input[type="search"] {
   background: transparent;
   width: 30vw;
   margin-left: 1rem;
@@ -325,4 +325,103 @@ main .container .left .profile {
   background: transparent;
   color: var(--color-dark);
   margin-right: 1rem;
+}
+/* -------------------Feeds-------------------  */
+.middle .feeds .feed {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+.middle .feeds .feed .head {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .feeds .feed .head .user {
+  display: flex;
+  gap: 1rem;
+}
+.middle .feeds .feed .photo {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 0.7rem 0;
+}
+.middle .feeds .feed .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.6rem;
+}
+.middle .feeds .feed .liked-by {
+  display: flex;
+}
+.middle .feeds .feed .liked-by span {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-white);
+  margin-left: -0.6rem;
+}
+.middle .feeds .feed .liked-by span:first-child {
+  margin: 0;
+}
+.middle .feeds .feed .liked-by p {
+  margin-left: 0.5rem;
+}
+/* =======================Right======================= */
+main .container .right {
+  height: max-content;
+  position: sticky;
+  top: var(--sticky-top-right);
+  bottom: 0;
+}
+main .container .right .messages {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+main .container .right .messages .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+main .container .right .messages i {
+  font-size: 1.4rem;
+}
+main .container .right .messages .search-bar {
+  display: flex;
+  margin-bottom: 1rem;
+}
+main .container .right .messages .category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+main .container .right .messages .category h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 4px solid var(--color-light);
+  padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+main .container .right .messages .category .active {
+  border-color: var(--color-dark);
+}
+main .container .right .messages .message {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: start;
+}
+main .container .right .messages .message:last-child {
+  margin: 0;
+}
+main .container .right .messages .message p {
+  font-size: 0.8rem;
 }
