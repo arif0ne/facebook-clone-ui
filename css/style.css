@@ -413,6 +413,9 @@ main .container .right .messages .category h6 {
 main .container .right .messages .category .active {
   border-color: var(--color-dark);
 }
+main .container .right .messages .category .messages-requests {
+  color: var(--color-primary);
+}
 main .container .right .messages .message {
   display: flex;
   gap: 1rem;
@@ -424,4 +427,89 @@ main .container .right .messages .message:last-child {
 }
 main .container .right .messages .message p {
   font-size: 0.8rem;
+}
+main .container .right .messages .message .profile-photo {
+  position: relative;
+  overflow: visible;
+}
+main .container .right .messages .message .profile-photo .active {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+  background: var(--color-success);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* =======================Friend Requests========================= */
+main .container .right .friend-requests {
+  margin-top: 1rem;
+}
+main .container .right .friend-requests h4 {
+  color: var(--color-gray);
+  margin: 1rem 0;
+}
+main .container .right .friend-requests .requests {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 0.7rem;
+}
+main .container .right .friend-requests .requests .info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+main .container .right .friend-requests .requests .action {
+  display: flex;
+  gap: 1rem;
+}
+/* ====================================Theme Customization================================== */
+.customize-theme {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+}
+.customize-theme .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+}
+/* ------------------------Font Size--------------------- */
+.customize-theme .card .font-size {
+  margin-top: 5rem;
+}
+.customize-theme .card .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+.customize-theme .card .font-size .choose-size {
+  background: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customize-theme .card .font-size .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
 }
