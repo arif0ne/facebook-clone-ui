@@ -5,9 +5,9 @@ const menuItems = document.querySelectorAll(".menu-item");
 const messagesNotification = document.querySelector("#messages-notifications");
 
 // MESSAGE
-// const messages = document.querySelector(".messages");
-// const message = messages.querySelectorAll(".message");
-// const messageSearch = document.querySelector("#messages-search");
+const messages = document.querySelector(".messages");
+const message = messages.querySelectorAll(".message");
+const messageSearch = document.querySelector("#messages-search");
 
 // THEME
 const theme = document.querySelector("#theme");
@@ -41,23 +41,24 @@ menuItems.forEach(item => {
 });
 
 
-// --------------Messages---------------
+// -- -- -- -- -- -- --Messages-- -- -- -- -- -- -- -
 
-// Search Chat 
-// const searchMessage = () => {
-//     const val = messageSearch.value.toLowerCase();
-//     message.forEach(chat => {
-//         let name = chat.querySelectorAll("h5").textContent.toLowerCase();
-//         if (name.indexOf(val) != -1) {
-//             chat.style.display = "flex";
-//         } else {
-//             chat.style.display = "none";
-//         }
-//     });
-// }
+// Search Chat
+const searchMessage = () => {
+    const val = messageSearch.value.toLowerCase();
+    message.forEach(chat => {
+        let name = chat.getElementsByTagName("h5")[0];
+        let nameValue = name.textContent || name.innerHTML;
+        if (nameValue.toLowerCase().indexOf(val) > -1) {
+            chat.style.display = "flex";
+        } else {
+            chat.style.display = "none";
+        }
+    });
+}
 
-//Search Message
-// messageSearch.addEventListener("keyup", searchMessage);
+// Search Message
+messageSearch.addEventListener("keyup", searchMessage);
 
 // hightlight message when clicked the message 
 messagesNotification.addEventListener("click", () => {
